@@ -8,7 +8,7 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/ayushhurkat/",
   github: "https://github.com/AyushHurkat0022",
   phone: "+91 7772993105",
-  resumeLink: "public/Ayush_Hurkat_Resume_Fresher.pdf",
+  resumeLink: "/Ayush_Hurkat_Resume_Fresher.pdf",
   bio: "Innovative Full Stack Developer passionate about creating seamless and impactful web solutions. Eager to leverage modern technologies to solve real-world problems and contribute to dynamic team environments.",
   shortBio: "Passionate to build web applications impacting world." 
 };
