@@ -1,0 +1,43 @@
+.footer {
+  background-color: #ffffff; /* Dark footer background */
+  height: 150px;          /* Default height for tablets/laptops */
+  padding-bottom: 10px;   /* Padding from bottom */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;  /* Align text at bottom */
+  overflow: hidden;
+  position: relative;
+}
+
+.footer-curved-text {
+  font-size: 4rem; /* Bigger text */
+  font-weight: bold;
+  fill: white;     /* Text white */
+}
+
+/* Gradient effect from red to white */
+.footer-curved-text textPath {
+  fill: url(#footer-gradient);
+}
+
+/* Responsive height for phones */
+@media (max-width: 768px) {
+  .footer {
+    height: 80px;       /* Smaller footer for phones */
+  }
+
+  .footer-curved-text {
+    font-size: 2.5rem;  /* Adjust text size for small screens */
+  }
+}
+
+/* Optional: tablets (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    height: 120px;      /* Medium height for tablets */
+  }
+
+  .footer-curved-text {
+    font-size: 3rem;    /* Slightly smaller text */
+  }
+}
