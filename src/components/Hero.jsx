@@ -4,11 +4,23 @@ import { personalInfo, socialLinks } from '../data/portfolioData.jsx';
 import { FaDownload } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
+import Aurora from './Aurora'; // import Aurora
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-primary-bg relative overflow-hidden">
-      
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
+      {/* Aurora Background */}
+      <Aurora
+        colorStops={['#3A29FF', '#FF94B4', '#FF3232']}
+        blend={0.5}
+        amplitude={1.0}
+        speed={0.5}
+      />
+
+      {/* Foreground Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,6 +57,7 @@ const Hero = () => {
           </p>
         </motion.div>
 
+        {/* Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -70,6 +83,7 @@ const Hero = () => {
           </a>
         </motion.div>
 
+        {/* Social Links */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -83,21 +97,28 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-secondary hover:text-accent-1 transition-colors"
-              aria-label={link.url.split(':')[0]} // For accessibility e.g., "mailto", "https"
+              aria-label={link.url.split(':')[0]}
             >
               {React.cloneElement(link.icon, { size: 28 })}
             </a>
           ))}
         </motion.div>
       </div>
-      
-      <ScrollLink 
-        to="about" 
-        smooth={true} 
-        duration={800} 
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce"
+
+      {/* Scroll Down Arrow */}
+      <ScrollLink
+        to="about"
+        smooth={true}
+        duration={800}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce z-10"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-accent-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-8 w-8 text-accent-1"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </ScrollLink>

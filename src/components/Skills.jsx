@@ -69,7 +69,7 @@ const Skills = () => {
                 <motion.span
                   key={index}
                   variants={skillItemVariants}
-                  className="bg-secondary-bg text-text-secondary py-2 px-4 rounded-full text-sm font-mono shadow-sm"
+                  className="bg-primary-bg text-text-secondary py-2 px-4 rounded-full text-sm font-mono shadow-sm"
                 >
                   {competency}
                 </motion.span>

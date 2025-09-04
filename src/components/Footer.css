@@ -1,43 +1,29 @@
 .footer {
-  background-color: #ffffff; /* Dark footer background */
-  height: 150px;          /* Default height for tablets/laptops */
-  padding-bottom: 10px;   /* Padding from bottom */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;  /* Align text at bottom */
-  overflow: hidden;
   position: relative;
+  height: 400px;
+  overflow: hidden;
+  background-color: var(--bg-primary-bg);
 }
 
-.footer-curved-text {
-  font-size: 4rem; /* Bigger text */
-  font-weight: bold;
-  fill: white;     /* Text white */
+/* Aurora container fills footer */
+.footer .aurora-container {
+  position: absolute;
+  top: 0;      /* Aurora fills from top */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows other interactions if needed */
 }
 
-/* Gradient effect from red to white */
-.footer-curved-text textPath {
-  fill: url(#footer-gradient);
-}
-
-/* Responsive height for phones */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .footer {
-    height: 80px;       /* Smaller footer for phones */
-  }
-
-  .footer-curved-text {
-    font-size: 2.5rem;  /* Adjust text size for small screens */
+    height: 100px;
   }
 }
 
-/* Optional: tablets (768px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .footer {
-    height: 120px;      /* Medium height for tablets */
-  }
-
-  .footer-curved-text {
-    font-size: 3rem;    /* Slightly smaller text */
+    height: 400px;
   }
 }

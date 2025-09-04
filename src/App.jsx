@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Activities from './components/Activities';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop'; 
 import SpotlightCursor from './components/SpotlightCursor';
 
@@ -25,7 +25,6 @@ function App() {
         <Activities />
         <Contact />
       </main>
-      <Footer />
       <ScrollToTop />
     </div>
   );

@@ -1,0 +1,18 @@
+.experience-curved-text {
+  font-size: 4rem;
+  font-weight: bold;
+  fill: url(#experience-gradient); /* Gradient text fill */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .experience-curved-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .experience-curved-text {
+    font-size: 3rem;
+  }
+}

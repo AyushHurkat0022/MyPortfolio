@@ -2,6 +2,7 @@ import React from 'react';
 import SectionTitle from './SectionTitle';
 import { personalInfo, socialLinks } from '../data/portfolioData.jsx';
 import { motion } from 'framer-motion';
+import AuroraUpsideDown from './AuroraUpsideDown'; // Import the upside-down Aurora
 
 const contactItemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -17,8 +18,16 @@ const contactItemVariants = {
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-primary-bg">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="relative py-20 bg-primary-bg overflow-hidden">
+      {/* Aurora Background */}
+      <AuroraUpsideDown
+        colorStops={['#3A29FF', '#FF94B4', '#FF3232']}
+        amplitude={1.0}  // Adjust for subtle effect
+        blend={0.5}
+        speed={0.5}
+      />
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionTitle id="contact-title">Get In Touch</SectionTitle>
         <motion.div 
           className="max-w-xl mx-auto text-center"
