@@ -24,8 +24,8 @@ function App() {
         <Projects />
         <Activities />
         <Contact />
-      </main>
       <ScrollToTop />
+      </main>
     </div>
   );
 }
