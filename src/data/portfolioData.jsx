@@ -36,13 +36,13 @@ export const education = [
 
 export const projects = [
   {
-    title: "Whiteboard App with Undo-Redo",
+    title: "SketchSpace",
     tech: ["React JS", "HTML5 Canvas", "Tailwind CSS", "JavaScript"],
     description: "Built an interactive whiteboard app featuring drawing tools (line, rectangle, ellipse, arrow, text), undo/redo support via Context API, and export-to-image functionality. Designed a responsive UI and initiated backend setup for real-time collaboration. Currently enhancing the application by adding backend with real-time multi-user collaboration using WebSockets.",
-    date: "Jan 2025 – Feb 2025",
+    date: "Jan 2025 – Sept 2025",
     githubLink: null,
-    liveLink: "https://whiteboardapp-ayushs-projects-bd8557a7.vercel.app/",
-    category: "Frontend / Collaboration Tool",
+    liveLink: "https://sketchspace.onrender.com/",
+    category: "Fullstack / Collaboration Tool",
     icon: <FaReact size={24} className="text-accent-1" />
   },
   {
