@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { personalInfo, socialLinks } from '../data/portfolioData.jsx';
 import { FaDownload } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import Aurora from './Aurora'; // import Aurora
 
 const Hero = () => {
@@ -105,7 +105,7 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Scroll Down Arrow */}
+      {/* Scroll Down Arrow
       <ScrollLink
         to="about"
         smooth={true}
@@ -121,7 +121,7 @@ const Hero = () => {
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
-      </ScrollLink>
+      </ScrollLink> */}
     </section>
   );
 };
