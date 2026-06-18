@@ -2,6 +2,7 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { personalInfo, socialLinks } from '../data/portfolioData.jsx';
 import { FaDownload } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import { Link as ScrollLink } from 'react-scroll';
 import Aurora from './Aurora'; // import Aurora
 

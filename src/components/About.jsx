@@ -2,6 +2,7 @@ import React from 'react';
 import SectionTitle from './SectionTitle';
 import { education } from '../data/portfolioData.jsx';
 import { FaUniversity, FaSchool } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },

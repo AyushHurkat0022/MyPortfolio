@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
 import { skills } from '../data/portfolioData.jsx';
+import { motion } from 'framer-motion';
 
 const skillCategoryVariants = {
   hidden: { opacity: 0, x: -50 },
@@ -46,7 +47,7 @@ const Skills = () => {
           <motion.div variants={skillCategoryVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
             <h3 className="text-2xl font-semibold text-accent-2 mb-6 font-mono text-center sm:text-left">Frameworks & Libraries</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {skills.frameworksAndLibraries.map((skill, index) => (
+              {skills.frameworksAndPlatforms?.map((skill, index) => (
                 <SkillCard key={index} name={skill.name} icon={skill.icon} />
               ))}
             </div>
@@ -55,7 +56,7 @@ const Skills = () => {
           <motion.div variants={skillCategoryVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
             <h3 className="text-2xl font-semibold text-accent-2 mb-6 font-mono text-center sm:text-left">Tools & Platforms</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {skills.toolsAndPlatforms.map((skill, index) => (
+              {skills.toolsAndDatabases.map((skill, index) => (
                 <SkillCard key={index} name={skill.name} icon={skill.icon} />
               ))}
             </div>

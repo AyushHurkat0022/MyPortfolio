@@ -3,6 +3,7 @@ import SectionTitle from './SectionTitle';
 import { experience } from '../data/portfolioData.jsx';
 import { FaBriefcase } from 'react-icons/fa';
 import CurvedLoop from './CurvedLoop';
+import { motion } from 'framer-motion';
 import './Experience.css'; // For gradient curved text styling
 
 const experienceItemVariants = {

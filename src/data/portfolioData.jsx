@@ -77,17 +77,6 @@ export const projects = [
     icon: <FaReact size={24} className="text-accent-1" />,
   },
   {
-    title: "Face Recognition Attendance System",
-    category: "Computer Vision / Automation",
-    date: "Aug 2023 – Sep 2023",
-    tech: ["Python", "OpenCV", "NumPy"],
-    description:
-      "Automated attendance system using computer vision. Built image capture pipelines, trained face recognition models, and logged attendance with timestamps. Implemented real-time detection with voice-based confirmation.",
-    githubLink: "https://github.com/Ayushhurkat22/Smart-Attendance-System",
-    liveLink: null,
-    icon: <SiPython size={24} className="text-accent-1" />,
-  },
-  {
     title: "Rubik’s Cube Solver",
     category: "Algorithms / Problem Solving",
     date: "Jan 2024 – Feb 2024",
