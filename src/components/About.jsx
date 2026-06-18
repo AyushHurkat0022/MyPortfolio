@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
 import { education } from '../data/portfolioData.jsx';
-import { motion } from 'framer-motion';
 import { FaUniversity, FaSchool } from 'react-icons/fa';
 
 const cardVariants = {
@@ -21,8 +20,8 @@ const About = () => {
     <section id="about" className="py-20 bg-secondary-bg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle id="about-title">About Me</SectionTitle>
-        
-        <motion.div 
+
+        <motion.div
           className="max-w-3xl mx-auto text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,14 +29,25 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-lg text-text-secondary leading-relaxed">
-            Hello! I'm <span className="text-accent-1 font-semibold">Ayush Hurkat</span>, 
-            a passionate Full Stack Developer with expertise in the MERN stack, C++, 
-            and problem-solving. I enjoy building scalable web applications, 
-            working with modern technologies, and exploring areas like 
-            cloud integration (AWS), computer vision, and algorithms. 
-            With hands-on experience in internships and projects, I strive 
-            to write clean, efficient code and contribute to impactful solutions. 
-            I'm eager to learn, adapt, and collaborate in dynamic environments.
+            Hello! I’m <span className="text-accent-1 font-semibold">Ayush Hurkat</span>,
+            a backend-focused software engineer with a strong foundation in Java,
+            object-oriented programming, and backend system design.
+            <br /><br />
+            I currently work as an Associate Software Engineer at Accenture, where I handle
+            enterprise backend logic, data workflows, and platform automation on the
+            Salesforce platform. My work involves Apex development, debugging backend
+            business logic, managing data integrity, and building workflows using
+            Agentforce — Salesforce’s AI agent layer.
+            <br /><br />
+            Alongside my enterprise work, my core technical focus is backend engineering
+            using Java and Spring Boot. I build RESTful APIs, design service-layer logic,
+            handle SQL-based data persistence, and focus on clean, maintainable backend
+            architecture.
+            <br /><br />
+            Through internships and independent projects, I’ve designed backend-driven
+            applications, optimized API performance, and worked with production-like
+            data. I value clean architecture, system reliability, and understanding how
+            backend systems behave at scale.
           </p>
         </motion.div>
 
@@ -54,8 +64,8 @@ const About = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <div className="flex items-center mb-3">
-                {edu.institution.toLowerCase().includes("institute") || edu.institution.toLowerCase().includes("university") ? 
-                  <FaUniversity className="text-accent-1 mr-3 text-2xl" /> : 
+                {edu.institution.toLowerCase().includes("institute") || edu.institution.toLowerCase().includes("university") ?
+                  <FaUniversity className="text-accent-1 mr-3 text-2xl" /> :
                   <FaSchool className="text-accent-1 mr-3 text-2xl" />
                 }
                 <h4 className="text-xl font-semibold text-text-primary">{edu.institution}</h4>

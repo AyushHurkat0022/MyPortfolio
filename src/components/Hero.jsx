@@ -3,7 +3,6 @@ import { TypeAnimation } from 'react-type-animation';
 import { personalInfo, socialLinks } from '../data/portfolioData.jsx';
 import { FaDownload } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
-import { motion } from 'framer-motion';
 import Aurora from './Aurora'; // import Aurora
 
 const Hero = () => {
@@ -36,6 +35,14 @@ const Hero = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-secondary mb-6">
             <TypeAnimation
               sequence={[
+                2000,
+                'I am a Backend Software Engineer.',
+                2000,
+                'I work with Java & Spring Boot.',
+                2000,
+                'I build enterprise logic on Salesforce.',
+                2000,
+                'I work with Apex & Agentforce.',
                 2000,
                 'I am a Full Stack Developer.',
                 2000,
@@ -104,24 +111,6 @@ const Hero = () => {
           ))}
         </motion.div>
       </div>
-
-      {/* Scroll Down Arrow
-      <ScrollLink
-        to="about"
-        smooth={true}
-        duration={800}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce z-10"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-8 w-8 text-accent-1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </ScrollLink> */}
     </section>
   );
 };

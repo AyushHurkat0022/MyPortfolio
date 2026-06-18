@@ -2,7 +2,6 @@ import React from 'react';
 import SectionTitle from './SectionTitle';
 import { experience } from '../data/portfolioData.jsx';
 import { FaBriefcase } from 'react-icons/fa';
-import { motion } from 'framer-motion';
 import CurvedLoop from './CurvedLoop';
 import './Experience.css'; // For gradient curved text styling
 

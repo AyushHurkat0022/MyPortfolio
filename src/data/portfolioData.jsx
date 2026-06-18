@@ -1,17 +1,43 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaReact, FaNodeJs, FaDatabase, FaCode, FaHtml5, FaCss3Alt, FaWordpress, FaFigma, FaAws, FaEdit, FaServer } from 'react-icons/fa'; // Example icons
-import { SiExpress, SiMongodb, SiFirebase, SiTailwindcss, SiJavascript, SiTypescript, SiCplusplus, SiPython } from 'react-icons/si'; // More specific tech icons
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaPhone,
+  FaReact,
+  FaDatabase,
+  FaAws,
+  FaEdit,
+  FaServer,
+} from 'react-icons/fa';
+
+import {
+  SiJavascript,
+  SiCplusplus,
+  SiSpring,
+  SiMysql,
+  SiPostman,
+  SiSalesforce,
+} from 'react-icons/si';
+
+/* =======================
+   PERSONAL INFO
+======================= */
 
 export const personalInfo = {
   name: "Ayush Hurkat",
-  title: "Full Stack Developer",
+  title: "Backend Software Engineer",
   email: "ayushhurkat.22@gmail.com",
   linkedin: "https://www.linkedin.com/in/ayushhurkat/",
   github: "https://github.com/AyushHurkat0022",
   phone: "+91 7772883105",
   resumeLink: "/Ayush_Hurkat_Resume_Fresher.pdf",
-  bio: "Innovative Full Stack Developer passionate about creating seamless and impactful web solutions. Eager to leverage modern technologies to solve real-world problems and contribute to dynamic team environments.",
-  shortBio: "Passionate to build web applications impacting world." 
+  bio: "Backend-focused software engineer at Accenture, working on enterprise platforms using Salesforce, Apex, and Agentforce. Strong foundation in Java, Spring Boot, REST APIs, and backend system design with experience handling real-world data workflows.",
+  shortBio: "Building reliable backend systems and enterprise-grade logic.",
 };
+
+/* =======================
+   EDUCATION
+======================= */
 
 export const education = [
   {
@@ -22,120 +48,136 @@ export const education = [
   },
   {
     institution: "Bareli Vidhya Mandir",
-    degree: "Class 12th MP Board",
-    duration: "April 2019 - May 2021",
+    degree: "Class 12th (MP Board)",
+    duration: "Apr 2019 – May 2021",
     score: "89.6%",
   },
   {
     institution: "St. Joseph's Sr Sec School, Pipariya",
-    degree: "Class 10th CBSE",
-    duration: "April 2017 - May 2019",
+    degree: "Class 10th (CBSE)",
+    duration: "Apr 2017 – May 2019",
     score: "90%",
   },
 ];
 
+/* =======================
+   PROJECTS
+======================= */
+
 export const projects = [
   {
     title: "SketchSpace",
-    tech: ["React JS", "HTML5 Canvas", "Tailwind CSS", "JavaScript"],
-    description: "Built an interactive whiteboard app featuring drawing tools (line, rectangle, ellipse, arrow, text), undo/redo support via Context API, and export-to-image functionality. Designed a responsive UI and initiated backend setup for real-time collaboration. Currently enhancing the application by adding backend with real-time multi-user collaboration using WebSockets.",
-    date: "Jan 2025 – Sept 2025",
+    category: "Full Stack / Collaboration Tool",
+    date: "Jan 2025 – Present",
+    tech: ["React", "WebSockets", "JavaScript", "Tailwind CSS"],
+    description:
+      "Designed an interactive whiteboard application with drawing tools, undo/redo functionality, and export-to-image support. Currently extending the backend to support real-time multi-user collaboration using WebSockets.",
     githubLink: null,
     liveLink: "https://sketchspace.onrender.com/",
-    category: "Fullstack / Collaboration Tool",
-    icon: <FaReact size={24} className="text-accent-1" />
+    icon: <FaReact size={24} className="text-accent-1" />,
   },
   {
     title: "Face Recognition Attendance System",
-    tech: ["Python", "OpenCV", "NumPy", "pyttsx3", "CSV"],
-    description: (
-  <ul>
-    <li>Automated attendance marking using computer vision and machine learning.</li>
-    <li>Captures individual images to build a dataset.</li>
-    <li>Trains a face recognition model via encoding scripts.</li>
-    <li>Detects and recognizes faces in real-time.</li>
-    <li>Logs attendance with timestamps in a CSV file.</li>
-    <li>Provides voice feedback for user confirmation.</li>
-    <li>See GitHub for full usage instructions (image capture, model training, recognition flow).</li>
-  </ul>
-),
-
+    category: "Computer Vision / Automation",
     date: "Aug 2023 – Sep 2023",
+    tech: ["Python", "OpenCV", "NumPy"],
+    description:
+      "Automated attendance system using computer vision. Built image capture pipelines, trained face recognition models, and logged attendance with timestamps. Implemented real-time detection with voice-based confirmation.",
     githubLink: "https://github.com/Ayushhurkat22/Smart-Attendance-System",
     liveLink: null,
-    category: "Computer Vision / Automation",
-    icon: <SiPython size={24} className="text-accent-1" />
+    icon: <SiPython size={24} className="text-accent-1" />,
   },
   {
     title: "Rubik’s Cube Solver",
-    tech: ["C++", "OOP", "Algorithms", "Data Structures"],
-    description: "Engineered a 3×3 Rubik’s Cube model leveraging advanced C++ data structures and OOP principles. Developed an efficient solver using multiple representation techniques and algorithms—achieving solve times under 3 seconds for cubes scrambled up to 8 moves.",
+    category: "Algorithms / Problem Solving",
     date: "Jan 2024 – Feb 2024",
+    tech: ["C++", "OOP", "Data Structures", "Algorithms"],
+    description:
+      "Implemented a 3×3 Rubik’s Cube solver using advanced C++ data structures and object-oriented design. Achieved solve times under 3 seconds for cubes scrambled up to 8 moves.",
     githubLink: "https://github.com/Ayushhurkat22/RubiksCubeSolver",
     liveLink: null,
-    category: "Algorithms / Problem Solving",
-    icon: <SiCplusplus size={24} className="text-accent-1" />
+    icon: <SiCplusplus size={24} className="text-accent-1" />,
   },
 ];
 
+/* =======================
+   EXPERIENCE
+======================= */
 
 export const experience = [
   {
-    role: "Full Stack Intern",
-    organization: "Bharat Gold Ornaments Pvt Ltd",
-    duration: "Oct 2024 – Apr 2025",
-    location: "Goa, India",
+    role: "Associate Software Engineer",
+    organization: "Accenture",
+    location: "Gurugram, India",
+    duration: "Feb 2026 – Present",
     points: [
-      "Contributed to the development of the KinMitra platform by building and optimizing key frontend and backend features.",
-      "Designed and implemented intuitive UI components, integrated AI-powered chat, and improved scalability for 500+ users.",
-      "Leveraged AWS Cognito and Lambda to streamline backend operations, reducing response time and improving efficiency.",
+      "Working on enterprise backend logic on the Salesforce platform, focusing on Apex development and data-driven workflows.",
+      "Debugging and extending backend business logic, automation rules, and integrations to ensure system correctness.",
+      "Investigating data-flow issues across interconnected records to maintain platform data integrity.",
+      "Building and configuring AI-driven workflows using Agentforce, Salesforce’s AI agent layer.",
+      "Collaborating with cross-functional teams to analyze production issues and improve system stability.",
     ],
   },
   {
-    role: "SDE Intern",
-    organization: "Shiavnski Tech LLP",
-    duration: "Apr 2024 – Jun 2024",
-    location: "Indore, India",
+    role: "Full Stack Developer Intern",
+    organization: "Bharat Gold Ornaments Pvt. Ltd.",
+    location: "Remote, India",
+    duration: "Oct 2024 – Apr 2025",
     points: [
-      "Developed a password management application ‘GetIn’ using the MERN stack with secure login, registration, and timestamped data features.",
-      "Optimized API design to reduce backend response time by 40% and improved overall system efficiency.",
-      "Enhanced user interface and user experience for seamless interaction across devices.",
+      "Contributed to the development of a scalable platform serving 500+ users.",
+      "Designed and optimized backend APIs to improve performance and reliability.",
+      "Integrated cloud services for authentication and backend operations.",
+    ],
+  },
+  {
+    role: "Software Development Intern",
+    organization: "Shiavnski Tech LLP",
+    location: "Remote, India",
+    duration: "Apr 2024 – Jun 2024",
+    points: [
+      "Designed and developed a backend-driven password management system.",
+      "Implemented REST APIs for secure authentication and data management.",
+      "Optimized backend performance, reducing API response time by ~40%.",
     ],
   },
 ];
 
+/* =======================
+   SKILLS
+======================= */
 
 export const skills = {
   languages: [
-    { name: "C/C++", icon: <SiCplusplus /> },
+    { name: "Java", icon: <FaServer /> },
+    { name: "C++", icon: <SiCplusplus /> },
     { name: "JavaScript", icon: <SiJavascript /> },
-    // { name: "TypeScript", icon: <SiTypescript /> }, // Add if you use it
-    { name: "HTML5", icon: <FaHtml5 /> },
-    { name: "CSS3", icon: <FaCss3Alt /> },
     { name: "SQL", icon: <FaDatabase /> },
   ],
-  frameworksAndLibraries: [
-    { name: "React JS", icon: <FaReact /> },
-    { name: "Node JS", icon: <FaNodeJs /> },
-    { name: "Express JS", icon: <SiExpress /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+  frameworksAndPlatforms: [
+    { name: "Spring Boot", icon: <SiSpring /> },
+    { name: "Salesforce (Apex)", icon: <SiSalesforce /> },
+    { name: "Agentforce", icon: <SiSalesforce /> },
+    { name: "REST APIs", icon: <FaServer /> },
   ],
-  toolsAndPlatforms: [
-    { name: "MongoDB", icon: <SiMongodb /> },
+  toolsAndDatabases: [
+    { name: "MySQL", icon: <SiMysql /> },
+    { name: "Postman", icon: <SiPostman /> },
+    { name: "AWS", icon: <FaAws /> },
     { name: "Git & GitHub", icon: <FaGithub /> },
     { name: "VS Code", icon: <FaEdit /> },
-    { name: "Postman", icon: <FaEnvelope /> },
-    { name: "Amazon Web Services", icon: <FaAws /> },
   ],
   coreCompetencies: [
-    "Problem Solving",
-    "Presentations",
-    "Oratory",
-    "Team Leadership",
-    "Event Hosting",
-    "Agile Methodologies",
-  ]
+    "Backend System Design",
+    "Enterprise Application Development",
+    "Debugging & Problem Solving",
+    "Data Integrity & Workflows",
+    "Agile & Team Collaboration",
+  ],
 };
+
+/* =======================
+   LEADERSHIP
+======================= */
 
 export const leadershipAndInvolvement = [
   {
@@ -143,8 +185,8 @@ export const leadershipAndInvolvement = [
     organization: "Board of Studies, Department of IT, MITS Gwalior",
     duration: "Nov 2022 – Aug 2024",
     points: [
-      "Represented student interests to faculty, HoD, and delegates from IITs, NITs, and IIITs.",
-      "Provided key insights that contributed to curriculum enhancements within the IT department.",
+      "Represented student interests to faculty and external academic delegates.",
+      "Contributed feedback that supported curriculum improvements.",
     ],
   },
   {
@@ -152,12 +194,15 @@ export const leadershipAndInvolvement = [
     organization: "FunTech Club, MITS Gwalior",
     duration: "Feb 2023 – Jan 2025",
     points: [
-      "Founded and led the design team, organizing workshops, events, and competitions to foster a vibrant tech community.",
-      "Conceptualized and executed innovative projects and events, promoting practical skills and creativity among students.",
+      "Founded and led the design team for technical events and workshops.",
+      "Promoted hands-on technical learning and community building.",
     ],
   },
 ];
 
+/* =======================
+   SOCIAL LINKS
+======================= */
 
 export const socialLinks = {
   linkedin: { url: personalInfo.linkedin, icon: <FaLinkedin size={24} /> },
